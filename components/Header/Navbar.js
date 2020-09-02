@@ -1,12 +1,10 @@
 import React from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Navbar = () => (
+const Navbar = ({children}) => (
     <nav className="navbar shadow-sm">
         <div className="navbar--logo-holder">
-            <a href='https://betterlifesavings.com' target='_blank'>
-            <img src="/new-logo.png" alt="BetterLifesavings" className="navbar-logo" height={100}/>
-            </a>
+           {children}
         </div>
         <ul className="navbar--link">
              <li>
